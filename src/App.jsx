@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-eval */
 import React, { useState } from "react";
 import "./App.css";
 
@@ -17,7 +19,7 @@ function App() {
   const [lastName, setLastname] = useState("");
 
   const [calculation, setCalculation] = useState("");
-  const [response, setRepsonse] = useState("");
+  const [response, setResponse] = useState("");
   const operators = ["/", "*", "+", "-", "."];
 
   const generateDigits = () => {
@@ -46,17 +48,17 @@ function App() {
     setCalculation(calculation + value);
 
     if (!operators.includes(value)) {
-      setRepsonse(eval(calculation + value).toString());
+      setResponse(eval(calculation + value).toString());
     }
   };
   const calculate = () => {
-    if (calculation == "") {
+    if (calculation === "") {
       return;
     }
     setCalculation(eval(calculation).toString());
   };
   const deleteDigit = () => {
-    if (calculation == "") {
+    if (calculation === "") {
       return;
     }
     const value = calculation.slice(0, -1);
