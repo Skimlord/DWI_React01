@@ -1,7 +1,105 @@
-.App {
-  text-align: center;
+html {
+  padding: 30px;
 }
 
-.name-input {
-  background-color: green;
+.App {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.form{
+  width: 500px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.input-container {
+ 
+}
+
+.input {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  height: 1rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid burlywood;
+}
+
+.user-submit-button {
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: burlywood;
+  padding: 10px;
+  margin: 10px;
+}
+
+.user-submit-button:hover {
+  filter: brightness(90%);
+}
+
+.user-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-list {
+  list-style: none;
+}
+
+li {
+   margin-bottom: 10px;
+}
+
+.calculator {
+  width: 300px;
+  height: 350;
+  text-align: center;
+  padding: 5px;
+  background-color: bisque;
+}
+
+.display {
+  padding: 20px;
+  text-align: right;
+  font-size: xx-large;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid burlywood;
+}
+
+.calculatorButtons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  border-radius: 5px;
+}
+
+.calculatorButton {
+  width: 31%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: burlywood;
+  border: none;
+  font-weight: bold;
+}
+
+.calculatorButton:hover {
+  filter: brightness(90%);
+}
+
+.calculatorButtonEnter {
+  width: 63%;
 }
